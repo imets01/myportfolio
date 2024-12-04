@@ -68,8 +68,8 @@ const aboutMeData = {
 };
 export default function Portfolio() {
   return (
-    <div className="min-h-screen text-foreground overflow-x-hidden">
-      <WavyBackgroundDemo />
+    <div className="min-h-screen text-foreground  bg-black">
+      <WavyBackgroundDemo className="sticky" />
 
       {/* Scroll Down Arrow */}
       <div className="absolute top-[92vh] left-1/2 transform -translate-x-1/2 animate-bounce z-50">
@@ -77,7 +77,7 @@ export default function Portfolio() {
       </div>
 
       <ThemeSelector />
-      <main className="relative z-20 bg-background rounded-t-[42px]">
+      <main className="relative z-20 bg-background rounded-t-[42px] overflow-x-hidden ">
         <div className="container mx-auto px-4 sm:px-6 py-16 max-w-4xl">
           <AboutMe
             forEveryone={aboutMeData.forEveryone}

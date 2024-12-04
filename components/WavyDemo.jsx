@@ -5,20 +5,19 @@ import { Button } from "@/components/ui/button";
 
 export function WavyBackgroundDemo() {
   return (
-    <section className="sticky top-0 z-10 h-screen flex flex-col text-white">
+    <section className="sticky top-0 z-10 h-screen flex flex-col text-white overflow-hidden bg-black">
       <WavyBackground
-        className="sticky"
         backgroundFill="black"
         waveOpacity={0.4}
         waveWidth={60}
         blur={12}
       >
-        <div className="container mx-auto px-4 max-w-4xl ml-2 overflow-x-hidden">
-          <h1 className="text-7xl font-bold mb-6">
+        <div className="container mx-auto px-4 max-w-4xl h-full flex flex-col justify-center">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6">
             Hey,
             <br />I am <span>Akos Imets</span>
           </h1>
-          <p className="text-2xl mb-8 max-w-2xl ">
+          <p className="text-xl sm:text-2xl mb-8 max-w-2xl">
             A Master&apos;s student in Informatics at UZH, with a strong
             software development background.
           </p>
