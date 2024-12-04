@@ -94,18 +94,21 @@ export default function Portfolio() {
 
             <div className="flex flex-wrap gap-2 justify-center sm:justify-start">
               {[
-                "Python",
-                "Django",
-                "Java",
                 "JavaScript",
                 "React",
                 "Next.js",
+                "Vue.js",
                 "Angular",
+                "Python",
+                "Django",
+                "Flask",
+                "Java",
                 "C#, .NET",
                 "HTML",
                 "CSS, tailwindcss",
                 "SQL",
                 "Git",
+                "Docker",
               ].map((skill) => (
                 <span
                   key={skill}
