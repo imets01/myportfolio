@@ -68,7 +68,7 @@ const aboutMeData = {
 };
 export default function Portfolio() {
   return (
-    <div className="min-h-screen text-foreground">
+    <div className="min-h-screen text-foreground overflow-x-hidden">
       <WavyBackgroundDemo />
 
       {/* Scroll Down Arrow */}
@@ -78,7 +78,7 @@ export default function Portfolio() {
 
       <ThemeSelector />
       <main className="relative z-20 bg-background rounded-t-[42px]">
-        <div className="container mx-auto px-4 py-16 max-w-4xl">
+        <div className="container mx-auto px-4 sm:px-6 py-16 max-w-4xl">
           <AboutMe
             forEveryone={aboutMeData.forEveryone}
             forRecruiters={aboutMeData.forRecruiters}
@@ -92,7 +92,7 @@ export default function Portfolio() {
               Skills
             </h2>
 
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 justify-center sm:justify-start">
               {[
                 "Python",
                 "Django",
@@ -122,7 +122,7 @@ export default function Portfolio() {
           <ContactForm />
 
           {/* Social Media */}
-          <section className="flex justify-center space-x-4">
+          <section className="flex justify-center space-x-4 mt-8">
             <Button
               variant="outline"
               size="icon2"
