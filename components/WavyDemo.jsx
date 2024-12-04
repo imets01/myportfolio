@@ -10,7 +10,7 @@ export function WavyBackgroundDemo() {
         className="sticky"
         backgroundFill="black"
         waveOpacity={0.4}
-        waveWidth={85}
+        waveWidth={60}
         blur={12}
       >
         <div className="container mx-auto px-4 max-w-4xl ml-2 overflow-x-hidden">
