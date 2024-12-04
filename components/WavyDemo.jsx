@@ -6,7 +6,13 @@ import { Button } from "@/components/ui/button";
 export function WavyBackgroundDemo() {
   return (
     <section className="sticky top-0 z-10 h-screen flex flex-col text-white">
-      <WavyBackground className="sticky">
+      <WavyBackground
+        className="sticky"
+        backgroundFill="black"
+        waveOpacity={0.4}
+        waveWidth={85}
+        blur={12}
+      >
         <div className="container mx-auto px-4 max-w-4xl ml-2 overflow-x-hidden">
           <h1 className="text-7xl font-bold mb-6">
             Hey,
